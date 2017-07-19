@@ -1,0 +1,52 @@
+/* css Zen Garden default style v1.02 */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+
+/* This file based on 'Tranquille' by Dave Shea */
+/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
+/* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
+
+/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
+
+@keyframes example {
+    from {color: #C32A00;}
+    to {color: #D60BDA;}
+}
+
+h1 {
+	font-size: 100px;
+	font-family: "Lucida Console", Monaco, monospace;
+	text-align: center;
+	color: #B07C0B;
+	width: 100%;
+    height: 100%;
+    animation-name: example;
+    animation-duration: 10s;
+
+}
+
+body {
+	background-image: url(images/zengarden.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.summary a {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+}
+
+.summary a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color on hover */
+.summary a:hover {
+    background-color: #555;
+    color: white;
+}
