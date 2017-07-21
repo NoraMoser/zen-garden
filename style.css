@@ -38,7 +38,15 @@ h2 {
     text-shadow: 2px 2px black;
 }
 body {
-	background-image: url(images/zengarden.jpg);
+	background: 
+    /* top, transparent red */
+    linear-gradient(
+      rgba(142, 142, 35, 0.15), 
+      rgba(142, 142, 35, 0.15)
+    ),
+    /* your image */
+
+	url(images/zengarden.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -46,7 +54,6 @@ body {
 
 .summary a {
     display: block;
-    color: black;
     padding: 14px 16px;
     text-decoration: none;
     list-style-type: none;
@@ -86,7 +93,10 @@ body {
 	font-family: "Lucida Console", Monaco, monospace;
 	color: #C32A00;
 	font-weight: bold;
-	text-shadow: .5px .5px black;
+	text-shadow: .5px .5px gray;
+	background-color: black;
+	border: 1px solid #B07C0B;
+	margin: 5%;
 }
 
 #zen-supporting {
@@ -94,11 +104,65 @@ body {
 	font-family: "Lucida Console", Monaco, monospace;
 	color: #C32A00;
 	font-weight: bold;
-	text-shadow: .5px .5px black;
+	text-shadow: .5px .5px gray;
 	columns: 100px 3;
+	font-size: 20px;
+	background-color: black;
+	border: 1px solid #B07C0B;
 }
 
 a:link {
 	text-decoration: none;
-	color: #B07C0B;
+	color: #C32A00;
+	background-color: #B07C0B;
+	border: 1px solid #C32A00;
+}
+
+ul {
+	display: flex;
+	justify-content: space-around;
+	align-items: stretch;
+	width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    border: 1px solid #C32A00;
+}
+
+li {
+    /*float: left;*/
+    display: flex;
+    /*width: 2%;*/
+    height: 3%;  /* Or whatever */ /* Or whatever */
+    margin: 5%;
+    flex-wrap: wrap;
+}
+
+li a {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    margin: auto;
+    flex-wrap: wrap;
+    padding: 8px 50px;
+    font-size: 5px;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #C32A00;
+    color: black;
+    font-size: 30px;
+}
+
+h3 {
+	text-align: center;
+	color: #C32A00;
 }
